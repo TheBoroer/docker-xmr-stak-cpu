@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.6
 
 MAINTAINER docker@bo.ro
 
@@ -30,4 +30,4 @@ RUN   apk del \
 WORKDIR /tmp
 
 USER miner
-ENTRYPOINT	["./start.sh"]
+ENTRYPOINT	["/tmp/start.sh"]
