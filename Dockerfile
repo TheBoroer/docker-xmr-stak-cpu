@@ -17,7 +17,7 @@ RUN   apk --no-cache upgrade && \
         git && \
       git clone https://github.com/TheBoroer/xmr-stak-cpu && \
       cd xmr-stak-cpu && \
-      cmake -DMICROHTTPD_REQUIRED=OFF -DCMAKE_LINK_STATIC=ON . && \
+      cmake -DMICROHTTPD_REQUIRED=OFF -DMICROHTTPD_ENABLE=OFF -DCMAKE_LINK_STATIC=ON . && \
       make && \
       apk del \
         cmake \
