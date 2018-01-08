@@ -5,7 +5,8 @@ The goal of this project is to quickly enable you to mine CryptoNight Coins usin
 Using an [Alpine Linux](https://www.alpinelinux.org/) container you get the benefit of Pax and grsecuirty and, on top of this the miner runs under its own user.
 
 # Configure via Environment Variable
-| **Variable** | **Default Value** | **Required**  |
+| Variable | Default Value | Required |
+| --- | --- | --- |
 | MINE_URL | "" | * |
 | MINE_WALLET | "" | * |
 | MINE_PASSWORD | "x" |  |
