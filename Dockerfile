@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:latest
 
 MAINTAINER docker@bo.ro
 
@@ -10,20 +10,22 @@ RUN   chown miner /tmp/config.txt
 
 RUN   apk --no-cache upgrade && \
       apk --no-cache add \
-        openssl-dev \
-        cmake \
-        g++ \
-        build-base \
-        git && \
-      git clone https://github.com/TheBoroer/xmr-stak-cpu && \
+          openssl-dev \
+          cmake \
+          g++ \
+          build-base \
+          git
+        
+RUN   git clone https://github.com/TheBoroer/xmr-stak-cpu && \
       cd xmr-stak-cpu && \
-      cmake -DMICROHTTPD_REQUIRED=OFF -DMICROHTTPD_ENABLE=OFF -DCMAKE_LINK_STATIC=ON . && \
-      make && \
-      apk del \
-        cmake \
-        g++ \
-        build-base \
-        git
+      cmake -DHWLOC_ENABLE=OFF -DMICROHTTPD_ENABLE=OFF -DMICROHTTPD_REQUIRED=OFF -DCMAKE_LINK_STATIC=ON . && \
+      make
+      
+RUN   apk del \
+          cmake \
+          g++ \
+          build-base \
+          git
 
 WORKDIR /tmp
 
