@@ -1,17 +1,21 @@
+"pool_address" : "MINE_URL",
+"wallet_address" : "MINE_WALLET",
+"pool_password" : "MINE_PASSWORD",
+
 "use_slow_memory" : "warn",
-"nicehash_nonce" : false,
+"nicehash_nonce" : MINE_NICEHASH,
+"prefer_ipv4" : PREFER_IPV4,
+
+"call_timeout" : CALL_TIMEOUT,
+"retry_time" : RETRY_TIMEOUT,
+"giveup_limit" : GIVEUP_LIMIT,
+
+"verbose_level" : VERBOSE_LEVEL,
+"h_print_time" : H_PRINT_TIME,
+
 "use_tls" : false,
 "tls_secure_algo" : true,
 "tls_fingerprint" : "",
-"call_timeout" : 10,
-"retry_time" : 10,
-"giveup_limit" : 0,
-"verbose_level" : 3,
-"h_print_time" : 60,
 "output_file" : "",
 "httpd_port" : 0,
-"prefer_ipv4" : true,
 
-"pool_address" : "POOL",
-"wallet_address" : "WALLET",
-"pool_password" : "PASSWORD",
