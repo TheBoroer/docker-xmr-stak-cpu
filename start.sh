@@ -9,17 +9,17 @@ if [ -z "$MINE_WALLET" ]; then
 fi
 
 # Default Values
-if [ -z "$MINE_PASSWORD" ]; then;      MINE_PASSWORD="x";        fi
-if [ -z "$MINE_THREADS" ]; then;       MINE_THREADS=1;           fi
-if [ -z "$MINE_NICEHASH" ]; then;      MINE_NICEHASH=false;      fi
-if [ -z "$CPU_LOW_POWER_MODE" ]; then; CPU_LOW_POWER_MODE=false; fi
-if [ -z "$CPU_NO_PREFETCH" ]; then;    CPU_NO_PREFETCH=true;     fi
-if [ -z "$VERBOSE_LEVEL" ]; then;      VERBOSE_LEVEL=4;          fi
-if [ -z "$H_PRINT_TIME" ]; then;       H_PRINT_TIME=60;          fi
-if [ -z "$PREFER_IPV4" ]; then;        PREFER_IPV4=true;         fi
-if [ -z "$CALL_TIMEOUT" ]; then;       CALL_TIMEOUT=10;          fi
-if [ -z "$RETRY_TIMEOUT" ]; then;      RETRY_TIMEOUT=10;         fi
-if [ -z "$GIVEUP_LIMIT" ]; then;     GIVEUP_LIMIT=0;           fi
+if [ -z "$MINE_PASSWORD" ]; then      MINE_PASSWORD="x";        fi
+if [ -z "$MINE_THREADS" ]; then       MINE_THREADS=1;           fi
+if [ -z "$MINE_NICEHASH" ]; then      MINE_NICEHASH=false;      fi
+if [ -z "$CPU_LOW_POWER_MODE" ]; then CPU_LOW_POWER_MODE=false; fi
+if [ -z "$CPU_NO_PREFETCH" ]; then    CPU_NO_PREFETCH=true;     fi
+if [ -z "$VERBOSE_LEVEL" ]; then      VERBOSE_LEVEL=4;          fi
+if [ -z "$H_PRINT_TIME" ]; then       H_PRINT_TIME=60;          fi
+if [ -z "$PREFER_IPV4" ]; then        PREFER_IPV4=true;         fi
+if [ -z "$CALL_TIMEOUT" ]; then       CALL_TIMEOUT=10;          fi
+if [ -z "$RETRY_TIMEOUT" ]; then      RETRY_TIMEOUT=10;         fi
+if [ -z "$GIVEUP_LIMIT" ]; then       GIVEUP_LIMIT=0;           fi
 
 
 # Generate config.txt
