@@ -6,7 +6,7 @@ Using an [Alpine Linux](https://www.alpinelinux.org/) container you get the bene
 
 # Configure via Environment Variable
 | Variable | Default Value | Required |
-| --- | :---: | --- |
+| --- | :---: | :---: |
 | MINE_URL | "" | * |
 | MINE_WALLET | "" | * |
 | MINE_PASSWORD | "x" |  |
