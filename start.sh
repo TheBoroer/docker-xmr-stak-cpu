@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ -z "$MINE_URL" ]; then
     echo "MINE_URL cannot be blank."; exit 1
