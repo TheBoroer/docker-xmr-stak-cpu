@@ -7,9 +7,9 @@ Using an [Alpine Linux](https://www.alpinelinux.org/) container you get the bene
 # Configure via Environment Variable
 | Variable | Default Value | Required |
 | --- | :---: | :---: |
-| MINE_URL | _blank_ | * |
-| MINE_WALLET | _blank_ | * |
-| MINE_PASSWORD | "x" |  |
+| MINE_URL | _none_ | * |
+| MINE_WALLET | _none_ | * |
+| MINE_PASSWORD | x |  |
 | MINE_THREADS | 1 |  |
 | MINE_NICEHASH | false |  |
 | CPU_LOW_POWER_MODE | false |  |
