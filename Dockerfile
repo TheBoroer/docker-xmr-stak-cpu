@@ -7,7 +7,7 @@ COPY config.txt /tmp/
 
 RUN   adduser -S -D -H -h /xmr-stak-cpu/bin miner
 RUN   chown miner /tmp/config.txt
-RUN   chmod 777 /tmp/start.sh
+RUN   chmod +x /tmp/start.sh
 
 RUN   apk --no-cache upgrade && \
       apk --no-cache add \
@@ -31,4 +31,4 @@ RUN   apk del \
 WORKDIR /tmp
 
 USER miner
-ENTRYPOINT ["./start.sh"]
+ENTRYPOINT ["/tmp/start.sh"]

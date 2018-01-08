@@ -39,9 +39,9 @@ echo '"cpu_threads_conf" : [' >> /tmp/config.txt
 CPU_COUNTER=0
 while [  ${CPU_COUNTER} -lt ${MINE_THREADS} ]; do
     echo '{ "low_power_mode" : '${CPU_LOW_POWER_MODE}', "no_prefetch" : '${CPU_NO_PREFETCH}', "affine_to_cpu" : '${CPU_COUNTER}' },' >> /tmp/config.txt
-    let CPU_COUNTER=CPU_COUNTER+1 
+    let CPU_COUNTER=CPU_COUNTER+1
 done
 echo '],' >> /tmp/config.txt
 
 # Run Miner
-/xmr-stak-cpu/bin/xmr-stak-cpu
+/xmr-stak-cpu/bin/xmr-stak-cpu --config /tmp/config.txt
