@@ -1,10 +1,10 @@
 #!/bin/sh
 
-if [ -z "$MINE_URL" ]; then
+if [ -z "${MINE_URL}" ]; then
     echo "MINE_URL cannot be blank."; exit 1
 fi
 
-if [ -z "$MINE_WALLET" ]; then
+if [ -z "${MINE_WALLET}" ]; then
     echo "MINE_WALLET cannot be blank."; exit 1
 fi
 

@@ -24,11 +24,11 @@ Using an [Alpine Linux](https://www.alpinelinux.org/) container you get the bene
 
 # Run via Docker CLI
 ```bash
-docker run boro/xmr-stak-cpu -e MINE_URL='cryptonight.usa.nicehash.com:3355' \
-                             -e MINE_WALLET='3BAqUNegyr7WdqeZLHb42NsE5aa1phAGwt.DockerWorker' \
-                             -e MINE_PASSWORD='x' \
-                             -e MINE_THREADS='4' \
-                             -e MINE_NICEHASH='true'
+docker run boro/xmr-stak-cpu -d -i -t -e MINE_URL="cryptonight.usa.nicehash.com:3355" \
+                                      -e MINE_WALLET="3BAqUNegyr7WdqeZLHb42NsE5aa1phAGwt.DockerWorker" \
+                                      -e MINE_PASSWORD="x" \
+                                      -e MINE_THREADS=4 \
+                                      -e MINE_NICEHASH=true
 ```
 
 # Run via Docker Compose:
