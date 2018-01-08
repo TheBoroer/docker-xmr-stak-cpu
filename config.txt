@@ -16,6 +16,9 @@
 "use_tls" : false,
 "tls_secure_algo" : true,
 "tls_fingerprint" : "",
+
+"aes_override" : null,
+"daemon_mode" : false,
 "output_file" : "",
 "httpd_port" : 0,
 
