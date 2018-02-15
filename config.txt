@@ -21,4 +21,3 @@
 "daemon_mode" : false,
 "output_file" : "",
 "httpd_port" : 0,
-
